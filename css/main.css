@@ -1,0 +1,86 @@
+.container {
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1952&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 100vh;
+  padding: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 48px;
+  }
+}
+
+.content {
+  max-width: 500px;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+.avatar {
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 5px 0px rgb(161, 161, 161);
+  border: solid 5px whitesmoke;
+}
+.name {
+  font-size: 48px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 36px;
+  }
+}
+
+.job {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.about {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3d3d3d;
+  margin-bottom: 20px;
+}
+
+.contact {
+  margin-bottom: 48px;
+}
+
+.contact-item {
+  margin-bottom: 5px;
+}
+
+.contact-icon {
+  margin-right: 10px;
+  width: 16px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: whitesmoke;
+  color: #3d3d3d;
+}
