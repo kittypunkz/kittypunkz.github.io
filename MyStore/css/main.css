@@ -54,6 +54,14 @@ body {
 }
 
 /*---- Collection Section ----*/
+.collection-list {
+  display: flex;
+}
+
+.collection-item-upright {
+  display: flex;
+}
+
 .collection-item-title {
   font-size: 24px;
   font-weight: 600;
