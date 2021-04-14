@@ -60,6 +60,9 @@ body {
   grid-template-rows: 1fr 1fr;
   row-gap: 16px;
   column-gap: 16px;
+  grid-template-areas:
+    "first first second third"
+    "first first fourth fourth";
 }
 
 .collection-item-title {
@@ -82,10 +85,7 @@ body {
       rgba(0, 0, 0, 0.1)
     ),
     url("../images/classic-collection.jpg"); /* Photo by NordWood Themes on Unsplash */
-  grid-row-start: 1;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-area: first;
 }
 
 .collection-item-two {
@@ -95,10 +95,7 @@ body {
       rgba(255, 255, 255, 0.2)
     ),
     url("../images/sport-collection.jpg"); /* Photo by Tom Radetzki on Unsplash */
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-area: second;
 }
 
 .collection-item-three {
@@ -108,10 +105,7 @@ body {
       rgba(255, 255, 255, 0.3)
     ),
     url("../images/sandal-collection.jpg"); /* Photo by Andy Garza on Unsplash */
-  grid-row-start: 1s;
-  grid-row-end: 2;
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-area: third;
 }
 
 .collection-item-four {
@@ -121,10 +115,7 @@ body {
       rgba(0, 0, 0, 0.2)
     ),
     url("../images/casual-collection.jpg"); /* Photo by Trendest Studio on Unsplash */
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-area: fourth;
 }
 
 /*---- Product Section ----*/
