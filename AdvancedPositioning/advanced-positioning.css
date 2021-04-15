@@ -47,24 +47,31 @@
   ## Exercise #1
   -------------------- */
 #box-group1 {
+  position: relative;
 }
 
 #box-1 {
+  top: 0px;
 }
 
 #box-2 {
+  top: 24px;
 }
 
 #box-3 {
+  top: 48px;
 }
 
 /* --------------------
   ## Exercise #2
   -------------------- */
 #box-group2 {
+  position: relative;
 }
 
 #box-4 {
+  position: absolute;
+  right: 0;
 }
 
 #box-5 {
@@ -77,6 +84,7 @@
   ## Exercise #3
   -------------------- */
 #box-group3 {
+  position: absolute;
 }
 
 #box-7 {
