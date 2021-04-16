@@ -74,24 +74,27 @@
   right: 0;
 }
 
-#box-5 {
-}
-
-#box-6 {
-}
-
 /* --------------------
   ## Exercise #3
   -------------------- */
 #box-group3 {
-  position: absolute;
+  position: fixed;
 }
 
 #box-7 {
+  position: fixed;
 }
 
 #box-8 {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
 #box-9 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: auto;
 }

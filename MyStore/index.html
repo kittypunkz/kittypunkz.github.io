@@ -9,15 +9,17 @@
 <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header class="menu-bar container">
-      <img src="./images/logo.png" alt="logo" class="logo" />
-      <nav class="nav-menu">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="/" class="nav-link">Collections</a></li>
-          <li class="nav-item"><a href="/" class="nav-link">Products</a></li>
-          <li class="nav-item"><a href="/" class="nav-link">About</a></li>
-        </ul>
-      </nav>
+    <header class="menu-bar-wrapper">
+      <div class="menu-bar container">
+        <img src="./images/logo.png" alt="logo" class="logo" />
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="/" class="nav-link">Collections</a></li>
+            <li class="nav-item"><a href="/" class="nav-link">Products</a></li>
+            <li class="nav-item"><a href="/" class="nav-link">About</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -65,6 +67,7 @@
               alt="Photo by Malvestida Magazine on Unsplash"
               class="product-item-image"
             />
+            <div class="product-label">NEW</div>
             <h3 class="product-item-title">Pinky Pink</h3>
             <p>Congue nisi vitae suscipit tellus mauris a diam maecenas sed.</p>
             <p class="price">฿2,490</p>
@@ -75,6 +78,7 @@
               alt="Photo by Alexander Rotker on Unsplash"
               class="product-item-image"
             />
+            <div class="product-label">SALE</div>
             <h3 class="product-item-title">Out of the Blue</h3>
             <p>Non sodales neque sodales ut etiam sit amet nisl purus.</p>
             <p class="price">฿4,990</p>
@@ -152,6 +156,36 @@
         </div>
         </div>
       </section>
+      <!-- Social List -->
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="/">
+            <img
+              src="images/social-logo/facebook-logo.svg"
+              alt="facebook-logo"
+              class="social-logo"
+            />
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="/">
+            <img
+              src="images/social-logo/twitter-logo.svg"
+              alt="twitter-logo"
+              class="social-logo"
+            />
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="/">
+            <img
+              src="images/social-logo/line-logo.svg"
+              alt="line-logo"
+              class="social-logo"
+            />
+          </a>
+        </li>
+      </ul>
     </main>
   </body>
 </html>

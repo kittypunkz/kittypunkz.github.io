@@ -22,9 +22,19 @@ body {
 /*---- Menu ----*/
 .menu-bar {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   height: 72px;
+}
+
+.menu-bar-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 1000;
 }
 
 .logo {
@@ -33,6 +43,7 @@ body {
 
 .nav-list {
   display: flex;
+  position: sticky;
 }
 
 .nav-item {
@@ -129,6 +140,19 @@ body {
 
 .product-item {
   width: 100%;
+  position: relative;
+}
+
+.product-label {
+  background-color: #f87060;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px;
+  width: fit-content;
+  position: absolute;
+  top: 24px;
+  left: -8px;
 }
 
 .product-item-title {
@@ -168,4 +192,14 @@ body {
   border-radius: 8px;
   object-fit: cover;
   margin-right: 24px;
+}
+
+.social-list {
+  position: fixed;
+  right: 72px;
+  bottom: 60px;
+}
+
+.social-logo {
+  width: 60px;
 }
