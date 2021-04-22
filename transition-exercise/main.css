@@ -1,0 +1,100 @@
+/**
+ * Do not modifying code in this section.
+ * Start writing your code after this section.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 36px;
+}
+
+h2 {
+  color: #434343;
+  border-bottom: 2px solid #434343;
+  padding-bottom: 12px;
+  margin-top: 0px;
+  margin-bottom: 36px;
+}
+
+.spacer {
+  padding: 48px;
+}
+
+.card {
+  padding: 24px;
+  width: 360px;
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.button {
+  background: none;
+  background-color: orange;
+  cursor: pointer;
+  padding: 20px 32px;
+  border-radius: 100px;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+}
+
+.link {
+  color: black;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  width: fit-content;
+}
+
+/*
+ * Start modifying code below
+*/
+
+/* Exercise 1 */
+
+.button {
+}
+
+.button:hover {
+}
+
+.button:active {
+}
+
+/* Exercise 2 */
+
+.card {
+}
+
+.card:hover {
+}
+
+.card:active {
+}
+
+/* Exercise 3 */
+
+.link {
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: orange;
+  z-index: -1;
+  height: 14px;
+  width: 100%;
+}
+
+.link:hover::before {
+}
