@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 64px;
+}
+
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  border-radius: 16px;
+}

@@ -19,6 +19,27 @@ body {
   margin-bottom: 64px;
 }
 
+.button {
+  display: block;
+  background-color: #f87060;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 12px 18px;
+  border-radius: 8px;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+.button:visited {
+  color: white;
+}
 /*---- Menu ----*/
 .menu-bar {
   display: flex;
@@ -72,7 +93,12 @@ body {
 
 /*---- Hero Section ----*/
 .hero-section {
-  background-image: url("../images/hero-background.jpg"); /* Photo by Nicholas Kampouris on Unsplash */
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/hero-background.jpg"); /* Photo by Nicholas Kampouris on Unsplash */
   background-size: cover;
   background-position: center center;
   height: 720px;
@@ -81,7 +107,17 @@ body {
 
 .hero-title {
   font-size: 64px;
-  font-weight: 700;
+  font-weight: 600;
+  padding-left: 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+    font-weight: 600;
+  }
 }
 
 /*---- Collection Section ----*/
@@ -255,6 +291,11 @@ body {
   justify-content: space-between;
 }
 
+.about-description {
+  font-size: 20px;
+  font-weight: 300;
+}
+
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -310,4 +351,12 @@ body {
 
 .hover-elevate:active {
   box-shadow: none;
+}
+
+/*---- Footer ----*/
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  background-color: whitesmoke;
 }
