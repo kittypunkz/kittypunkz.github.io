@@ -18,8 +18,12 @@ body {
   margin-bottom: 64px;
 }
 
+.heading {
+  font-weight: 600;
+}
+
 .profile-page {
-  padding: 0px 30px;
+  padding: 30px;
 }
 
 .profile-header {
@@ -58,6 +62,22 @@ body {
   font-weight: 500;
 }
 
+h3.heading {
+  font-size: 20px;
+}
+
+.profile-subdetail {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.profile-specialty,
+.profile-language {
+  flex-grow: 5;
+  margin-top: 10px;
+}
+
 .profile-button {
   background-color: #00603e;
   border: none;
@@ -68,7 +88,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 18px;
-  margin: 20px 2px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -96,6 +116,15 @@ body {
     font-size: 18px;
     font-weight: 500;
   }
+
+  .profile-subdetail {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile-button {
+    width: 100%;
+  }
 }
 
 .accordion-bral {
@@ -115,6 +144,7 @@ body {
   height: auto;
   cursor: pointer;
   color: #00603e;
+  font-weight: 600;
   line-height: 33px;
   font-size: 19px;
 }
@@ -142,6 +172,7 @@ body {
   overflow: hidden;
   height: 0px;
   max-height: auto;
+  padding: 0 20px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
