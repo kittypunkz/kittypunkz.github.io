@@ -33,7 +33,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: stretch;
   flex-grow: 8;
 }
 
@@ -71,6 +70,32 @@ body {
   font-size: 18px;
   margin: 20px 2px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+  }
+
+  .profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .profile-info {
+    align-items: center;
+  }
+
+  .profile-title {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .profile-dept {
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
 .accordion-bral {
@@ -185,13 +210,10 @@ table.ac-table th {
     position: relative;
     display: block;
     height: auto;
-    padding-right: 40px;
     cursor: pointer;
-    color: #777;
+    color: #00603e;
     line-height: 33px;
     font-size: 19px;
-    background: #efefef;
-    border: 1px solid #ccc;
   }
   .accordion-bral i {
     position: absolute;
