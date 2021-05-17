@@ -2,45 +2,52 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
-.section-title {
-  font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 24px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0px auto;
-}
-
-.section {
-  margin-bottom: 64px;
-}
-
-.heading {
-  font-weight: 600;
-}
-
-.profile-page {
-  padding: 30px;
-}
-
-.profile-header {
+.flex-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-start;
-  flex-grow: 2;
+  align-content: center;
+  align-items: flex-start;
 }
 
-.profile-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-grow: 8;
+.flex-item:nth-child(1) {
+  order: 0;
+  flex: 0 1 30%;
+  align-self: auto;
 }
 
-.profile-image {
+.flex-item:nth-child(2) {
+  order: 0;
+  flex: 0 1 70%;
+  align-self: auto;
+}
+
+@media screen and (max-width: 866px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+  }
+
+  .flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 100%;
+    align-self: center;
+  }
+
+  .flex-item:nth-child(2) {
+    order: 0;
+    flex: 0 1 100%;
+    align-self: center;
+  }
+}
+
+
+.profile-image-thumbnail {
   display: block;
   width: 200px;
   height: 200px;
