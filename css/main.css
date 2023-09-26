@@ -19,10 +19,6 @@
   }
 }
 
-.content {
-  max-width: 500px;
-}
-
 body {
   font-family: "Bai Jamjuree", sans-serif;
 }
@@ -33,6 +29,9 @@ body {
   border-radius: 50%;
   box-shadow: 5px 5px 5px 0px rgb(161, 161, 161);
   border: solid 5px whitesmoke;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .name {
   font-size: 48px;
@@ -47,10 +46,10 @@ body {
   }
 }
 
-.job {
+.job, .skill, .portfolio {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .about {
@@ -61,7 +60,7 @@ body {
 }
 
 .contact {
-  margin-bottom: 48px;
+  margin: 20px 0px;
 }
 
 .contact-item {
@@ -98,4 +97,21 @@ body {
 .portfolio-item {
   margin: 10px 0px;
   width: auto;
+}
+
+.submenu {
+  margin-right: 10px;
+}
+
+.header {
+  padding: 20px 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  background: #f0f0f0;
+  color: white;
+}
+
+hr {
+  margin: 10px 0px;
+}
 }
